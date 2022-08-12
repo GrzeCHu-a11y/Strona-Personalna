@@ -1,0 +1,49 @@
+#section-home {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+}
+
+// phones
+@media only screen and (max-width: 600px) {
+
+    body {
+        
+    }
+
+    #section-home {
+        padding: 20px 20px 20px 20px;
+    }
+
+    .header {
+        float: left;
+        &__h1 {
+            font-size: $very-big-font-mobile;
+        }
+    }
+
+    .p {
+        font-size: $medium-font-mobile;
+        margin-top: 40px;
+        float: left;
+    }
+
+    .images-container {
+        float: left;
+        // background-color: $primary-color;
+
+        &__img {
+            height: 64px;
+            width: 64px;
+            padding-top: 20px;
+        }
+    }
+
+    .language-mobile {
+        &__p {
+            font-size: $big-font-mobile;
+        }
+    }
+
+}
