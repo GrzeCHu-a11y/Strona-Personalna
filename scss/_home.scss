@@ -1,19 +1,25 @@
-#section-home {
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-    position: relative;
-}
+
 
 // phones
 @media only screen and (max-width: 600px) {
 
     body {
-        
+        overflow-x: hidden;
     }
 
-    #section-home {
+    .section-home {
+        height: 100vh;
+        box-sizing: border-box;
         padding: 20px 20px 20px 20px;
+        width: 100%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .language-desktop {
+        display: none;
     }
 
     .header {
@@ -23,7 +29,7 @@
         }
     }
 
-    .p {
+    .home-p {
         font-size: $medium-font-mobile;
         margin-top: 40px;
         float: left;
@@ -46,4 +52,115 @@
         }
     }
 
+}
+
+// Laptops 
+
+@media only screen and (min-width: 1400px) {
+    body {
+        // background-color: red;
+        overflow-x: hidden;
+    }
+
+    main {
+        margin-left: 20%;
+        height: auto;
+    }
+
+    .language-mobile {
+        display: none;
+    }
+
+    .language-desktop {
+        margin: 0;
+        float: right;
+    }
+
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 100vh;
+        background-color: $primary-color;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu {
+        
+        padding: 0;
+        display: block;
+        margin: 0;
+        list-style: none;
+        width: 100%;
+
+
+        &__item {
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+            font-size: $ultra-small-font-desktop;
+            color: $second-color;
+            cursor: pointer;
+
+            &:hover {
+                letter-spacing: 1px;
+                transform: translateY(1px);
+                font-weight: 600;
+                color: white;
+            }
+        }
+    }
+
+
+
+
+    .section-home {
+        height: 100vh;
+        width: 100%;
+        // background-color: rgb(161, 27, 101);
+        padding: 0 3% 0 3%;
+        box-sizing: border-box;
+    }
+
+    .header {
+
+        padding-top: 10%;
+        text-align: center;
+
+        &__h1 {
+            margin: 0;
+            font-size: $big-font-desktop;
+            
+        }
+
+        &__p {
+            margin: 0;
+            font-size: $super-ultra-small-font-desktop;
+            padding-top: 10px;
+        }
+    }
+
+    // .home-p {
+    //     // font-size: $medium-font-mobile;
+    //     margin: 0;
+
+    // }
+
+
+
+
+
+
+
+
+
+    .test {
+        height: 100vh;
+        width: 100%;
+        background-color: pink;
+    }
 }

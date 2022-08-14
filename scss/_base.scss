@@ -13,7 +13,9 @@ main {
     height: auto;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 h1 {
     margin: 0;
