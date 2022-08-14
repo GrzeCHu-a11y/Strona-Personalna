@@ -52,6 +52,10 @@
         }
     }
 
+    .quote-content-container {
+        display: none;
+    }
+
 }
 
 // Laptops 
@@ -143,6 +147,82 @@
             padding-top: 10px;
         }
     }
+
+
+
+
+
+    .quote-content-container {
+        position: relative;
+        width: 65%;
+        margin: 0 auto;
+        font-size: $ultra-small-font-desktop;
+        text-align: center;
+        margin-top: 7%;
+        height: 40%;
+    
+        // BigDesktop
+        @media screen and (min-width: 1600px) {
+          margin-top: 10%;
+        }
+      }
+    
+      .quote-content-container:before {
+        display: block;
+        content: "";
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        border-top: 5px solid $primary-color;
+        border-left: 5px solid $primary-color;
+        
+      }
+      .quote-content-container:after {
+        display: block;
+        content: "";
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        border-bottom: 5px solid $primary-color;
+        border-right: 5px solid $primary-color;
+      }
+    
+      .quote-contnet-p-border{
+        width: 80%;
+        height: 100%;
+    
+        margin: 0 auto;
+    
+        &__p {
+          margin: 0;
+          padding-top: 15%;
+          font-size: $ultra-small-font-desktop;
+    
+    // BigDesktop
+    @media screen and (min-width: 1600px) {
+      font-size: $small-font-desktop;
+    }
+    
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     // .home-p {
     //     // font-size: $medium-font-mobile;

@@ -60,6 +60,9 @@ h1 {
   .language-mobile__p {
     font-size: 25px;
   }
+  .quote-content-container {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -134,6 +137,65 @@ h1 {
     font-size: 20px;
     padding-top: 10px;
   }
+  .quote-content-container {
+    position: relative;
+    width: 65%;
+    margin: 0 auto;
+    font-size: 27px;
+    text-align: center;
+    margin-top: 7%;
+    height: 40%;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (min-width: 1600px) {
+  .quote-content-container {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .quote-content-container:before {
+    display: block;
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-top: 5px solid #EC0B43;
+    border-left: 5px solid #EC0B43;
+  }
+  .quote-content-container:after {
+    display: block;
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border-bottom: 5px solid #EC0B43;
+    border-right: 5px solid #EC0B43;
+  }
+  .quote-contnet-p-border {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .quote-contnet-p-border__p {
+    margin: 0;
+    padding-top: 15%;
+    font-size: 27px;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (min-width: 1600px) {
+  .quote-contnet-p-border__p {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
   .test {
     height: 100vh;
     width: 100%;
