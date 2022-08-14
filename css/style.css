@@ -206,10 +206,20 @@ h1 {
     float: right;
     padding-right: 15px;
   }
-  .test {
+  .works {
     height: 100vh;
     width: 100%;
     background-color: pink;
+  }
+  .skills {
+    height: 100vh;
+    width: 100%;
+    background-color: #411119;
+  }
+  .contact {
+    height: 100vh;
+    width: 100%;
+    background-color: #cec0ff;
   }
 }
 /*# sourceMappingURL=style.css.map */
