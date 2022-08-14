@@ -196,6 +196,16 @@ h1 {
 }
 
 @media only screen and (min-width: 1400px) {
+  .images-container {
+    width: 100%;
+    height: 10%;
+  }
+  .images-container__img {
+    height: 64px;
+    width: 64px;
+    float: right;
+    padding-right: 15px;
+  }
   .test {
     height: 100vh;
     width: 100%;
