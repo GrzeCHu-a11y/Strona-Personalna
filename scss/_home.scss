@@ -1,5 +1,4 @@
 
-
 // phones
 @media only screen and (max-width: 600px) {
 
@@ -37,7 +36,6 @@
 
     .images-container {
         float: left;
-        // background-color: $primary-color;
 
         &__img {
             height: 64px;
@@ -62,7 +60,6 @@
 
 @media only screen and (min-width: 1400px) {
     body {
-        // background-color: red;
         overflow-x: hidden;
     }
 
@@ -94,7 +91,6 @@
     }
 
     .menu {
-        
         padding: 0;
         display: block;
         margin: 0;
@@ -137,7 +133,6 @@
         &__h1 {
             margin: 0;
             font-size: $big-font-desktop;
-            
         }
 
         &__p {
@@ -208,7 +203,6 @@
 
     .images-container {
         width: 100%;
-        // background-color: blue;
         height: 10%;
 
         &__img {
@@ -216,6 +210,12 @@
             width: 64px;
             float: right;
             padding-right: 15px;
+
+            &:hover {
+                cursor: pointer;
+                height: 68px;
+                width: 68px;
+            }
         }
       }
 
@@ -224,11 +224,7 @@
       // TEST AREA
 
 
-    .works {
-        height: 100vh;
-        width: 100%;
-        background-color: pink;
-    }
+    
 
     .skills {
         height: 100vh;
@@ -245,8 +241,6 @@
    
 
     
-
-
 
     // TEST AREA
 }
