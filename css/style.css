@@ -317,6 +317,15 @@ h1 {
     max-height: 100%;
     -webkit-box-shadow: 5px 5px 15px 5px #000000;
     box-shadow: 5px 5px 15px 5px #000000;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+  }
+  .item__img:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 /*# sourceMappingURL=style.css.map */

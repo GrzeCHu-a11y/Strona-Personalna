@@ -1,0 +1,13 @@
+TASKS
+
+Technical 
+1. add resolution for big desktops 
+
+Optymalization 
+1. optymalize home.scss 
+2. optymalize images
+
+Design 
+1. navbar shadow?
+2. quote animation?
+3. custom scrollbar
