@@ -225,11 +225,6 @@ h1 {
     height: 68px;
     width: 68px;
   }
-  .skills {
-    height: 100vh;
-    width: 100%;
-    background-color: #411119;
-  }
   .contact {
     height: 100vh;
     width: 100%;
@@ -340,6 +335,100 @@ h1 {
     cursor: pointer;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+  }
+}
+
+.section-skills {
+  min-height: 100vh;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  gap: 25px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.skills-header {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-skills {
+    padding: 20px 20px 20px 20px;
+  }
+  .skills-header {
+    left: 0;
+  }
+  .skills-header__h1 {
+    font-size: 60px;
+  }
+  .skills-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .skill {
+    width: 100%;
+    min-height: 30vh;
+    background-color: #F9F9F9;
+    text-align: center;
+    border: 3px solid black;
+  }
+  .skill__p {
+    width: 100%;
+    min-height: 20%;
+    font-size: 30px;
+    margin: 0;
+  }
+  .skill__img {
+    height: 129px;
+    width: 129px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .section-skills {
+    padding: 5% 5% 0 5%;
+  }
+  .skills-header__h1 {
+    font-size: 40px;
+  }
+  .skills-container {
+    padding-top: 10vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .skill {
+    width: 20%;
+    min-height: 30vh;
+    text-align: center;
+    border: 3px solid black;
+    -webkit-box-shadow: 8px 8px 24px -13px #313131;
+    box-shadow: 8px 8px 24px -13px #313131;
+  }
+  .skill__p {
+    width: 100%;
+    min-height: 20%;
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
