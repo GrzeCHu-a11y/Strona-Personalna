@@ -113,5 +113,11 @@
         margin-top: 5vh;
         border-radius: 5px;
         width: 100px;
+        background-color: rgb(176, 168, 168);
+    }
+
+    #submit:hover {
+        background-color: $primary-color;
+        cursor: pointer;
     }
 }

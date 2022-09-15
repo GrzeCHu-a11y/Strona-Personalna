@@ -88,7 +88,7 @@
         text-align: center;
         display: flex;
         align-items: center;
-        
+        box-shadow: 2px 2px 2px 1px rgba(22, 22, 22, 0.2);
     }
 
     .menu {
@@ -109,10 +109,25 @@
 
             &:hover {
                 letter-spacing: 1px;
-                transform: translateY(1px);
                 font-weight: 600;
                 color: white;
+                transform: scale(1.1);
             }
+        }
+
+        &__item::after {
+            content: "";
+            width: 0;
+            height: 3px;
+            background-color: white;
+            margin: auto;
+            display: block;
+
+        }
+
+        &__item:hover::after {
+            width: 50%;
+            transition: width 0.3s linear;
         }
     }
 
@@ -133,7 +148,9 @@
 
         &__h1 {
             margin: 0;
+            position: relative;
             font-size: $big-font-desktop;
+            text-shadow: -20px 4px 6px rgba(173, 171, 171, 0.783);
         }
 
         &__p {
@@ -142,7 +159,6 @@
             padding-top: 10px;
         }
     }
-
 
     .quote-content-container {
         position: relative;
@@ -186,13 +202,13 @@
       .quote-contnet-p-border{
         width: 80%;
         height: 100%;
-    
         margin: 0 auto;
     
         &__p {
           margin: 0;
           padding-top: 15%;
           font-size: $ultra-small-font-desktop;
+          
     
     // BigDesktop
     @media screen and (min-width: 1600px) {
@@ -214,9 +230,9 @@
 
             &:hover {
                 cursor: pointer;
-                height: 68px;
-                width: 68px;
+                transform: scale(1.1);
             }
         }
       }
 }
+
